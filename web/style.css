@@ -16,3 +16,15 @@ body{
 #logo{
     background-color: #1c345a;
 }
+
+header, footer{
+    color: white;
+}
+
+.importante{
+    font-weight: bold;
+}
+
+div#content h2{
+    color: #9e1616;
+}
