@@ -12,10 +12,26 @@ and open the template in the editor.
         <meta name="author" content="Salvatore Cervone">
         <meta name="keywords" content="FPW, Progetto, HTML, CSS, Java">
         <meta name="description" content="Pagina di registrazione Esercitazione FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <div><h1>Writing is easy! <a href="index.html">Or go back</a></h1></div>
-        <div>
+        <header>
+            <h1>Writing is easy!</h1>
+            <div id="logo">
+                <img title="Scrittura" alt="Macchina da Scrivere" src="image/untitled.png">
+            </div>
+        </header>
+         <nav>
+        <h2>Lista pagine</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://google.com">Ti sei perso!?</a></li>
+            <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="registrazione.html">Registrazione</a></li>
+
+        </ul>
+        </nav>
+        <main>
             <form action="index.html" method="post">
                 <label for="id_nomeutente">Nome:</label>
                 <input type="text" name="nomeUtente" id="id_nomeutente" value="Mario Rossi"/>
@@ -28,9 +44,25 @@ and open the template in the editor.
                 <label for="id_password">Password:</label>
                 <input type="password" name="password" id="id_password" value="oscurato"/>
                 <br/>
+                <label for="scrittore">Scrittore: </label>
+                <input type="radio" name="tipo_utente" id="scrittore" value="scrittore">
+                <br/>
                 
+                <label for="autore">Autore: </label>
+                <input type="radio" name="tipo_utente" id="autore" value="autore">
+                <br/>
+                
+                <p>Colore Preferito</p>
+                <select>
+                    <option value="red">Rosso</option>
+                    <option value="white">Bianco</option>
+                    <option value="grey">Grigio</option>
+                    <option value="yellow">Giallo</option>
+                    <option value="green">Verde</option>                                           
+                </select>
+                <br/>
                 <input type="submit" value="Submit"/>
             </form>
-        </div>
+        </main>
     </body>
 </html>
