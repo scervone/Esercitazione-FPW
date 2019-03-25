@@ -28,3 +28,7 @@ header, footer{
 div#content h2{
     color: #9e1616;
 }
+
+h1,h2,h3,h4,h5,h6{
+    color:  #1c345a; 
+}
